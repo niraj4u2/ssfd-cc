@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Security System for Debit &amp; Credit Card</string>
+    <string name="title">Security System For Debit &amp; Credit Card Equipped With Pre-Confirmation Instruction.</string>
+
+
+    <string name="Provides_card_less">Provides card less transactions for ATM, merchant and online.</string>
+    <string name="Block">If the user wants to block the card.</string>
+    <string name="change_password">If the user wants to change password of the card.</string>
+    <string name="Lost_miss">If the user has lost or misplaced the card.</string>
+    <string name="multiple_transactions">Provides multiple transactions for ATM, shopping transaction with one pre-confirmation.</string>
+    <string name="mutiple_shoping">Provides for multiple shopping transactions.</string>
+    <string name="ONE">Provides one transaction either for ATM or shopping.</string>
+    <string name="online">Provides for online transaction only.</string>
+    <string name="several">Provides one or several transaction for ATM only. </string>
+    <string name="OneShoping">Provides for one shopping transaction.</string>
+    <string name="found">If the user has found his card.</string>
+    <string name="Camera">Camera</string>
+    <string name="Gallery">Gallery</string>
+    <string name="Yes">Yes</string>
+    <string name="No">No</string>
+
+</resources>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/gradient_background"
+    android:layout_height="match_parent"
+    tools:context=".LogInActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red_theme">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="@string/title"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            app:cardElevation="@dimen/_20sdp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/tb1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:padding="20dp"
+            android:elevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/gradient_foreground">
+
+
+                <TextView
+                    android:id="@+id/tvLog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/grey"
+                    android:text="If already have an account."
+                    android:textSize="18sp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/etAccount"
+                    style="@style/TextInputLayoutStyleRegisterFace"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvLog"
+                    android:hint="Account number"
+                    android:padding="20dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:theme="@style/EditTextThemeOverlay"
+                    app:hintTextAppearance="@style/HelperTextAppearanceRegister"
+                    app:hintTextColor="@color/grey">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/eTAccount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:digits="1234567890"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:textColor="@color/black" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rl"
+                    android:layout_below="@+id/etAccount"
+                    >
+
+                    <TextView
+                        android:id="@+id/tvs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:text="Enter Login Pin"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <com.chaos.view.PinView
+                        android:id="@+id/firstPinView"
+                        style="@style/PinWidget.PinView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvs"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:cursorVisible="true"
+                        android:inputType="numberPassword"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        app:cursorWidth="1dp"
+                        app:itemCount="4"
+                        app:itemRadius="5dp"
+                        app:viewType="rectangle" />
+
+                    <ImageView
+                        android:id="@+id/ivPassToggle"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_below="@id/tvs"
+                        android:layout_marginTop="@dimen/_25sdp"
+                        android:layout_toRightOf="@id/firstPinView"
+                        android:src="@drawable/ic_eye_hide_pass"
+                        app:tint="@color/black" />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/tvForgot"
+                    android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:text="Forgot Pin?"
+                    android:textSize="14dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnLog"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_37sdp"
+                    android:layout_below="@+id/tvForgot"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/btn_bg"
+                    android:text="Login"
+                    android:textAllCaps="false"
+                    android:textColor="#ffff"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvOR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btnLog"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:text="----- OR -----"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/_16sdp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:background="@drawable/btn_bg"
+                    android:id="@+id/btnCreate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvOR"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="@dimen/_18sdp"
+                    android:padding="@dimen/_8sdp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:text="Create New Account"
+                    android:textAllCaps="false"
+                    android:textColor="#ffff"
+                    android:textSize="16dp" />
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
