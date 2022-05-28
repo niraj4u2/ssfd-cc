@@ -103,9 +103,9 @@
                             </div>
 
                             <!-- item-->
-                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            <a href="<?php echo e(url('/user/changepassword')); ?>" class="dropdown-item notify-item">
                                 <i class="dripicons-user"></i>
-                                <span>My Account</span>
+                                <span>Change Password</span>
                             </a>
 
                             

@@ -64,8 +64,7 @@ unset($__errorArgs, $__bag); ?>
                                 </div>
 
                                 <div class="form-group mb-3">
-                                    <?php if(Route::has('password.request')): ?><a href="<?php echo e(route('password.request')); ?>" class="text-muted float-right"><small>Forgot your password?</small></a>
-                                    <?php endif; ?>
+                                  
                                     
                                       
                                     

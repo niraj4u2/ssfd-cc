@@ -1,1 +1,0 @@
- <?php /**PATH /home/x73belfhully/public_html/ssskinnovations.com/hoc/resources/views/auth/register.blade.php ENDPATH**/ ?>

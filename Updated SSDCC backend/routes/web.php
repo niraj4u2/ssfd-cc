@@ -35,7 +35,7 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('/user/add' , 'User@add');
 	Route::get('/user/edit/{id}' , 'User@edit');
     Route::post('/user/save/' , 'User@save')->name('user.save');; 
-   
+   Route::any('/user/changepassword/' , 'User@changepassword')->name('user.changepassword');; 
     Route::get('/user/delete/{id}' , 'User@delete');
 
 	
